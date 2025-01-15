@@ -176,11 +176,11 @@ void readGasSensor() {
         return;
     }
     if(sensorReading > safeValue){ 
-        HM10.print("1"); // Gás detectado
+        HM10.print("1.0"); // Gás detectado
         HM10.println(";");
 
     } else {
-        HM10.print("0"); // Gás não detectado
+        HM10.print("0.0"); // Gás não detectado
         HM10.println(";");
 
     }
